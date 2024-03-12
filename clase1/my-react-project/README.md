@@ -1,8 +1,19 @@
-# React + Vite
+# Curso ReactJS-I, Clase 1
+## Instrucciones
+Para correr el proyecto se debe clonar el repositorio y correr los siguientes comandos dentro de la carpeta del proyecto:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```c
+// Para clonar el repositorio
+git clone https://github.com/mgltorsa/ReactJS-I.git
+// Para entrar al directorio del proyecto
+cd my-react-project 
+npm install
+npm run dev
+```
 
-Currently, two official plugins are available:
+# Diapositivas: 
+[Introduccion a react](https://link-url-here.org](https://docs.google.com/presentation/d/1-fBx3sSona9UOf2t2VRT17NQ5QTszOkw/edit?usp=drivesdk&ouid=110557219236303200618&rtpof=true&sd=true
+)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Introduccion a JSX](https://link-url-here.org](https://docs.google.com/presentation/d/1-Q65vY70ghUITuzaXcWIFLAVhEMQLYyj/edit?usp=drivesdk&ouid=110557219236303200618&rtpof=true&sd=true)https://docs.google.com/presentation/d/1-Q65vY70ghUITuzaXcWIFLAVhEMQLYyj/edit?usp=drivesdk&ouid=110557219236303200618&rtpof=true&sd=true)
+
