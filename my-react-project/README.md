@@ -3,8 +3,8 @@
 Para correr el proyecto se debe clonar el repositorio y correr los siguientes comandos dentro de la carpeta del proyecto:
 
 ```c
-git clone https://github.com/mgltorsa/ReactJS-I.git # Para clonar el repositorio
-cd my-react-project # Para entrar al directorio del proyecto
+git clone https://github.com/mgltorsa/ReactJS-I.git // Para clonar el repositorio
+cd my-react-project // Para entrar al directorio del proyecto
 npm install
 npm run dev
 ```
