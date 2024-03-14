@@ -1,15 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 const EventHandlingComponent = () => {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
+
+  const ref = useRef();
 
   const handleButtonClick = () => {
-    setMessage('¡Botón clickeado!');
+    setMessage("¡Botón clickeado!");
   };
 
   const handleKeyPress = (event) => {
     setMessage(`Tecla presionada: ${event.key}`);
   };
+
+  useEffect(() => {
+    ref.current.focus();
+  }, []);
 
   return (
     <div>
@@ -17,6 +23,7 @@ const EventHandlingComponent = () => {
       <button onClick={handleButtonClick}>Clic aquí</button>
       <p>{message}</p>
       <input
+        ref={ref}
         type="text"
         placeholder="Presiona una tecla"
         onKeyDown={handleKeyPress}

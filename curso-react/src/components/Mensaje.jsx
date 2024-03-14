@@ -1,6 +1,6 @@
 const Mensaje = () => {
 
-    const nombre = "Mundo";
+  const nombre = "Mundo";
   return (
     <div>{`Hola ${nombre}`}</div>
   )
