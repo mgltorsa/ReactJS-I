@@ -18,5 +18,4 @@ export default class Mensaje_class_component extends Component {
 
     }
 
-
 }
