@@ -1,12 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
+import Mensaje_class_component from "../components/Mensaje_class_component";
 
-const Tienda = props => {
+const Tienda = (props) => {
   return (
-    <div>Tienda Lista</div>
-  )
-}
+    <div>
+      <h1>Tienda titulo</h1>
+      <Mensaje_class_component nombre={"dentro de la tienda"}/>
 
-Tienda.propTypes = {}
+    </div>
+  );
+};
 
-export default Tienda
+Tienda.propTypes = {};
+
+export default Tienda;

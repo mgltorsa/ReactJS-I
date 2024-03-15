@@ -2,6 +2,7 @@ import { Component } from 'react'
 
 export default class ContadorError extends Component {
     constructor(props) {
+      props = {}
       super(props);
       this.state = { counter: 0 };
       this.handleClick = this.handleClick.bind(this);

@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 
+export const Mensaje = (props) => {
+  return (
+    <div>Mensaje_class_component</div>
+  )
+}
 
 export default class Mensaje_class_component extends Component {
 
@@ -8,14 +13,9 @@ export default class Mensaje_class_component extends Component {
     }
 
     render() {
-
-       
-
         return (
             <div>{`Hello this is the prop ${this.props.nombre}`}</div>
         )
-
-
     }
 
 }

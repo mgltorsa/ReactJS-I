@@ -2,21 +2,22 @@ import React, { Component, useState } from "react";
 import { useEffect } from "react";
 
 export const ContadorFuncionalCicloDeVida = (props) => {
-
   const [contador, setContador] = useState(0);
 
   useEffect(() => {
     console.log("MONTADO");
-    console.log("DID_UPDATE")
+    console.log("DID_UPDATE");
     console.log("RENDERIZADO");
+    if (contador == 5) {
+      alert("Ganaste");
+    }
     return () => {
       console.log("DESMONTADO");
     };
-  }, []);
-
+  }, [contador]);
 
   return (
-    <div onClick={() => setContador(contador+1)}>
+    <div onClick={() => setContador(contador + 1)}>
       Contador Funcional LifeCycle: {contador}
     </div>
   );
