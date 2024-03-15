@@ -1,5 +1,3 @@
-# Class - March 15, 2024
-
 # Curso ReactJS-I, Clase 1
 ## Instrucciones
 Para correr el proyecto se debe clonar el repositorio y correr los siguientes comandos dentro de la carpeta del proyecto:
