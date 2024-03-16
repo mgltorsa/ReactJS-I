@@ -8,8 +8,7 @@ function App() {
   return (
     <>
       <ErrorBoundary>
-        <Propagation />
-        <Formulario />
+       
       </ErrorBoundary>
     </>
   );
