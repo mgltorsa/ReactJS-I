@@ -1,15 +1,10 @@
 import "./App.css";
-
-import ErrorBoundary from "./views/ErrorBoundary";
-import Propagation from "./components/propagation";
-import Formulario from "./components/Formulario";
+import FormularioContenedor from "./componentes/Contenedor"
 
 function App() {
   return (
     <>
-      <ErrorBoundary>
-       
-      </ErrorBoundary>
+      <FormularioContenedor />
     </>
   );
 }
