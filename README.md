@@ -1,4 +1,4 @@
-# Curso ReactJS-I, Clase 1
+# Curso ReactJS-I
 ## Instrucciones
 Para correr el proyecto se debe clonar el repositorio y correr los siguientes comandos dentro de la carpeta del proyecto:
 
@@ -24,3 +24,6 @@ Para cambiar de rama en git debemos ejecutar los siguientes comandos dentro de l
 git checkout clase1
 
 ```
+
+# Propuesta proyecto:
+El proyecto está disponible en el siguiente [documento](https://docs.google.com/document/d/1VukCSsEx3wtCRolslKJZEd_wQk5rpZDZr2CGomVTZW8/edit?usp=sharing)
