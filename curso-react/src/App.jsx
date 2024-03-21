@@ -1,26 +1,34 @@
-import { useState } from "react";
 import "./App.css";
-import ContadorCicloDeVida, { ContadorFuncionalCicloDeVida } from "./components/ContadorCicloDeVida";
-import Encabezado from "./components/Encabezado";
-import ErrorBoundary from "./views/ErrorBoundary";
-import ContadorError from "./views/ErrorBoundary/ContadorError";
+import { Provider } from "react-redux";
+import store from "./store";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Tienda from "./views/Tienda";
-import Temporizador from "./components/clase5/Hooks/temporizador";
-import TemporizadorVersionTwo from "./components/clase5/Hooks/temporizadorUseEffect";
-import HookPersonalziado from "./components/clase5/Hooks/hookPersonalziado";
-import Tema from "./components/clase5/Hooks/tema";
-import ReducerTempor from "./components/clase5/Reducer/temporizadorReducer";
+import Usuarios from "./views/Usuarios";
+import Layout from "./views/Layout";
+
 function App() {
-  const [mostrar, setMostrar] = useState(false);
   return (
     <>
-      <ErrorBoundary>
-        <Encabezado nombreTienda="Amazing" />
-        <Tienda />
-        <ReducerTempor/>
-       {/*  {mostrar && <ContadorFuncionalCicloDeVida />} */}
-       {/*  <button onClick={() => setMostrar(!mostrar)}>{`${mostrar ? 'Ocultador contador':'Mostrar contador'}`}</button> */}
-      </ErrorBoundary>
+      <Provider store={store}>
+        {/* <Temporizador /> */}
+        <Router>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  Hola
+                  <Link to="/perfil/usuarios">Ir a perfil </Link>
+                </div>
+              }
+            />
+            <Route path="/perfil" element={<Layout />}>
+              <Route path="usuarios" element={<Usuarios />} />
+              <Route path="tienda" element={<Tienda />} />
+            </Route>
+          </Routes>
+        </Router>
+      </Provider>
     </>
   );
 }
