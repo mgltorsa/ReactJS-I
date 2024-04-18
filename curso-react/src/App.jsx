@@ -1,22 +1,14 @@
 import { useState } from "react";
 import "./App.css";
-import ContadorCicloDeVida, { ContadorFuncionalCicloDeVida } from "./components/ContadorCicloDeVida";
-import Encabezado from "./components/Encabezado";
-import ErrorBoundary from "./views/ErrorBoundary";
-import ContadorError from "./views/ErrorBoundary/ContadorError";
-import Tienda from "./views/Tienda";
 
 function App() {
-  const [mostrar, setMostrar] = useState(false);
+  const [mostrar, setMostrar] = useState(false)
+
   return (
     <>
-      <ErrorBoundary>
-        <Encabezado nombreTienda="Amazing" />
-        <Tienda />
-        <ContadorError />
-        {mostrar && <ContadorFuncionalCicloDeVida />}
-        <button onClick={() => setMostrar(!mostrar)}>{`${mostrar ? 'Ocultador contador':'Mostrar contador'}`}</button>
-      </ErrorBoundary>
+      <h1>Test mostrar</h1>
+      <button onClick={() => setMostrar(!mostrar)}>Click para mostrar</button>
+      {mostrar && <p>Existo</p>}
     </>
   );
 }
