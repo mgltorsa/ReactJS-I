@@ -324,11 +324,18 @@ Utilize los conceptos de componentes, propiedades y hooks para implementar una l
 El landing page, debe contener los siguientes elementos:
 
 - Encabezado: Titulo de la página y links de inicio y contacto
-- Mensaje de bienvenida, 
+- Mensaje de bienvenida
 - Botón de ver productos
 
-¡Recuerde que los componentes en React son creados como pequeños bloques de código que nos ayudan a implementar nuestras interfaces de usuario!a
+¡Recuerda que los componentes en React son creados como pequeños bloques de código que nos ayudan a implementar nuestras interfaces de usuario!
 
-Ejemplo de landing page
+**nota**
+En esta evidencia el estudiante debe seguir el enfoque de componentes de React, que en pocas palabras nos guia en la construccion de interfaces de usuario complejas a través de pequeños bloques llamados "Componentes". 
+
+A continuación verá un ejemplo de como se ve este enfoque graficamente.
+![Components](https://reactiveprogramming.io/_next/image?url=%2Ffigures%2Freact%2Fweb-components.png&w=1920&q=75)
+
+También, encontrara ejemplos de landing pages
 
 ![Land page](LandPage.png)
+![Land page 2](https://themesbrand.com/zooki-react/assets/images/demo/index-2.jpg)
