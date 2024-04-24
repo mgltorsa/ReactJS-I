@@ -319,7 +319,7 @@ export default App;
 
 
 ## Evidencia a entregar
-Utilize los conceptos de componentes, propiedades y hooks para implementar una landing page (o una version parecida).
+Utilice los conceptos de componentes, propiedades y hooks para implementar una landing page (o una version parecida).
 
 El landing page, debe contener los siguientes elementos:
 
