@@ -1,14 +1,10 @@
-import { useState } from "react";
 import "./App.css";
+import Formulario from "./components/Form";
 
 function App() {
-  const [mostrar, setMostrar] = useState(false)
-
   return (
     <>
-      <h1>Test mostrar</h1>
-      <button onClick={() => setMostrar(!mostrar)}>Click para mostrar</button>
-      {mostrar && <p>Existo</p>}
+      <Formulario />
     </>
   );
 }
