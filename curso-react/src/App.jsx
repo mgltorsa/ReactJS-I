@@ -1,14 +1,13 @@
-import { useState } from "react";
 import "./App.css";
+import AppRouter from "./routing/AppRouter";
+
+import { Home } from "./views/Home";
+import Products from "./views/Products";
 
 function App() {
-  const [mostrar, setMostrar] = useState(false)
-
   return (
     <>
-      <h1>Test mostrar</h1>
-      <button onClick={() => setMostrar(!mostrar)}>Click para mostrar</button>
-      {mostrar && <p>Existo</p>}
+      <AppRouter />
     </>
   );
 }
